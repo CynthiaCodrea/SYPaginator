@@ -1,20 +1,13 @@
-{
-  "name": "SYPaginator",
-  "platforms": {
-    "ios": null
-  },
-  "version": "1.0.0",
-  "license": "MIT",
-  "summary": "Simple paging scroll view to make complicated tasks easier.",
-  "homepage": "https://github.com/Synthetic/SYPaginator",
-  "authors": {
-    "Sam Soffes": "sam@samsoff.es"
-  },
-  "source": {
-    "git": "https://github.com/CynthiaCodrea/SYPaginator.git",
-    "tag": "1.0.0"
-  },
-  "source_files": "SYPaginator/*.{h,m}",
-  "requires_arc": true,
-  "resources": "Resources/*.lproj"
-}
+Pod::Spec.new do |spec|
+  spec.name         = ’SYPaginator’
+  spec.version      = ‘1.0.0’
+  spec.license      = { :type => 'MIT' }
+  spec.homepage     = 'https://github.com/Synthetic/SYPaginator'
+  spec.authors      = { 'Sam Soffes' => 'sam@samsoff.es' }
+  spec.summary      = 'Simple paging scroll view to make complicated tasks easier.'
+  spec.source       = { :git => 'https://github.com/CynthiaCodrea/SYPaginator.git', :tag => "#{spec.version}" }
+  spec.source_files = 'SYPaginator/*.{h,m}'
+  spec.framework    = 'UIKit'
+  spec.platform     = :ios, '7.0'
+  spec.requires_arc = true
+end
